@@ -14,11 +14,11 @@ BacSi::~BacSi()
 void BacSi::Nhap()
 {
 	fflush(stdin);
-	cout << "Nhap ho va ten bac si kham: ";
+	cout << "+ Nhap ho va ten bac si kham: ";
 	getline(cin, HoTen);
 
 	fflush(stdin);
-	cout << "Nhap don vi: ";
+	cout << "+ Nhap don vi: ";
 	getline(cin, DonVi);
 }
 
