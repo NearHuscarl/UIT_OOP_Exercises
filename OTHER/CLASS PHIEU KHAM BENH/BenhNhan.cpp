@@ -14,21 +14,21 @@ BenhNhan::~BenhNhan()
 void BenhNhan::Nhap()
 {
 	fflush(stdin);
-	cout << "Nhap ho va ten benh nhan: ";
+	cout << "+ Nhap ho va ten benh nhan: ";
 	getline(cin, HoTen);
 
 	do {
-		cout << "Nhap gioi tinh (1- Nam; 2- Nu; 3- Khac): ";
+		cout << "+ Nhap gioi tinh (1- Nam; 2- Nu; 3- Khac): ";
 		cin >> GioiTinh;
 	} while (GioiTinh < 1 || GioiTinh > 3);
 
 	fflush(stdin);
-	cout << "Nhap dia chi: ";
+	cout << "+ Nhap dia chi: ";
 	getchar();
 	getline(cin, DiaChi);
 
 	fflush(stdin);
-	cout << "Nhap tien su benh: ";
+	cout << "+ Nhap tien su benh: ";
 	getline(cin, TienSuBenh);
 }
 

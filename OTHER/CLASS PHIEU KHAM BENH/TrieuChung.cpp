@@ -15,12 +15,12 @@ void TrieuChung::Nhap()
 {
 	//Can fix loi trong ham nay
 	fflush(stdin);
-	cout << "Nhap ma trieu chung: ";
+	cout << "   + Nhap ma trieu chung: ";
 	getchar();
 	getline(cin, MaTrieuChung);
 
 	fflush(stdin);
-	cout << "Nhap ten trieu chung: ";
+	cout << "   + Nhap ten trieu chung: ";
 	getline(cin, TenTrieuChung);
 }
 

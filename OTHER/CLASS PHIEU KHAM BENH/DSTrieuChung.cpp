@@ -17,15 +17,15 @@ int DSTrieuChung::getSoLuong()
 
 void DSTrieuChung::Nhap()
 {
-	cout << "Nhap so luong trieu chung: ";
+	cout << "+ Nhap so luong trieu chung: ";
 	cin >> SoLuong;
 
 	DanhSach = new TrieuChung[SoLuong];
 
-	cout << "NHAP DANH SACH CAC TRIEU CHUNG" << endl;
+	cout << "+ Nhap danh sach cac trieu chung" << endl;
 	for (int i = 0; i < SoLuong; i++)
 	{
-		cout << "TRIEU CHUNG THU " << i + 1 << endl;
+		cout << "   * TRIEU CHUNG THU " << i + 1 << endl;
 		DanhSach[i].Nhap();
 	}
 }

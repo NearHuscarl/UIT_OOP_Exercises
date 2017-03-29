@@ -17,15 +17,15 @@ void PhieuKhamBenh::Nhap()
 	cout << "-------------------------------------------" << endl;
 
 	fflush(stdin);
-	cout << "Nhap ma phieu: ";
+	cout << "+ Nhap ma phieu: ";
 	getline(cin, MaPhieu);
-
+	cout << "-------------------------------------------" << endl;
 	ThongTinBenhNhan.Nhap();
-
+	cout << "-------------------------------------------" << endl;
 	ThongTinBacSi.Nhap();
-
+	cout << "-------------------------------------------" << endl;
 	CacTrieuChung.Nhap();
-
+	cout << "-------------------------------------------" << endl;
 	fflush(stdin);
 	cout << "Nhap ket luan: ";
 	getline(cin, KetLuan);
