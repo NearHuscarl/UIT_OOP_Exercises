@@ -51,7 +51,7 @@ bool CNgay::LaNamNhuan()
 int CNgay::SoNgayToiDa()
 {
 	int SoNgayTrongThang[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
-	if (LaNamNhuan()==true)
+	if (LaNamNhuan() == true)
 	{
 		SoNgayTrongThang[1] = 29;
 	}

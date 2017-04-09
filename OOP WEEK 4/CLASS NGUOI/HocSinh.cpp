@@ -46,22 +46,21 @@ void CHocSinh::Nhap()
 	CNguoi::Nhap();
 
 	fflush(stdin);
-	cout << "Nhap ten truong: ";
+	cout << "+ Nhap ten truong: ";
 	getchar();
 	getline(cin, Truong);
-	
-	cout << "Nhap khoi lop: ";
+
+	cout << "+ Nhap khoi lop: ";
 	cin >> KhoiLop;
 
-	cout << "Nhap diem trung binh: ";
+	cout << "+ Nhap diem trung binh: ";
 	cin >> DiemTrungBinh;
 }
 
 void CHocSinh::Xuat()
 {
 	CNguoi::Xuat();
-
-	cout << "Truong: " << Truong << endl;
-	cout << "Lop: " << KhoiLop << endl;
-	cout << "Nhap diem trung binh: " << DiemTrungBinh << endl;
+	cout << "+ Truong: " << Truong << endl;
+	cout << "+ Lop: " << KhoiLop << endl;
+	cout << "+ Nhap diem trung binh: " << DiemTrungBinh << endl;
 }

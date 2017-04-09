@@ -6,7 +6,7 @@ using namespace std;
 
 class CSinhVien : public CNguoi
 {
-private:	
+private:
 	string MaSo;
 	string ChuyenNganh;
 	float DiemRenLuyen;

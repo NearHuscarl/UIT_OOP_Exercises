@@ -2,7 +2,7 @@
 #include <iostream>
 #include "Nguoi.h"
 #include <string>
-class CHocSinh:public CNguoi
+class CHocSinh :public CNguoi
 {
 private:
 	string Truong;

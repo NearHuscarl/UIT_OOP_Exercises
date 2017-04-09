@@ -23,7 +23,7 @@ void CGioiTinh::setGioiTinh(int GioiTinhMoi)
 void CGioiTinh::Nhap()
 {
 	do {
-		cout << "Nhap gioi tinh (1-Nam; 2-Nu; 3-Khac): ";
+		cout << "+ Nhap gioi tinh (1-Nam; 2-Nu; 3-Khac): ";
 		cin >> GioiTinh;
 	} while (GioiTinh <= 0 || GioiTinh > 3);
 }

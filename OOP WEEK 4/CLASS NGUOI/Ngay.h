@@ -21,7 +21,7 @@ public:
 	void setNgay(int n);
 	void setThang(int t);
 	void setNam(int N);
-	
+
 	void Nhap();
 	void Xuat();
 };

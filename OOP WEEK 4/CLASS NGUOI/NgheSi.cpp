@@ -26,18 +26,17 @@ void CNgheSi::Nhap()
 	CNguoi::Nhap();
 
 	fflush(stdin);
-	cout << "Nhap ten san khau: ";
+	cout << "+ Nhap ten san khau: ";
 	getchar();
 	getline(cin, TenSanKhau);
 
-	cout << "Nhap muc catxe: ";
+	cout << "+ Nhap muc cat-xe: ";
 	cin >> CatXe;
 }
 
 void CNgheSi::Xuat()
 {
 	CNguoi::Xuat();
-
-	cout << "Ten an khau: " << TenSanKhau << endl;
-	cout << "Muc catxe: " << CatXe << endl;
+	cout << "+ Ten an khau: " << TenSanKhau << endl;
+	cout << "+ Muc cat-xe: " << CatXe << endl;
 }

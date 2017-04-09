@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-class CNgheSi:public CNguoi
+class CNgheSi :public CNguoi
 {
 protected:
 	string TenSanKhau;

@@ -36,19 +36,18 @@ void CCaSi::Nhap()
 	CNgheSi::Nhap();
 
 	fflush(stdin);
-	cout << "Nhap the loai nhac: ";
+	cout << "+ Nhap the loai nhac: ";
 	getchar();
 	getline(cin, TheLoai);
 
 	fflush(stdin);
-	cout << "Nhap ten album dau tay: ";
+	cout << "+ Nhap ten album dau tay: ";
 	getline(cin, AlbumDauTay);
 }
 
 void CCaSi::Xuat()
 {
 	CNgheSi::Xuat();
-
-	cout << "The loai nhac: " << TheLoai << endl;
-	cout << "Ten album dau tay: " << AlbumDauTay << endl;
+	cout << "+ The loai nhac: " << TheLoai << endl;
+	cout << "+ Ten album dau tay: " << AlbumDauTay << endl;
 }

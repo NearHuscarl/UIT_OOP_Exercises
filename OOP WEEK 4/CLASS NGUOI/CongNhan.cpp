@@ -36,18 +36,17 @@ void CCongNhan::Nhap()
 	CNguoi::Nhap();
 
 	fflush(stdin);
-	cout << "Nhap ma so: ";
+	cout << "+ Nhap ma so: ";
 	getchar();
 	getline(cin, MaSo);
 
-	cout << "Nhap muc luong hang thang: ";
+	cout << "+ Nhap muc luong hang thang: ";
 	cin >> LuongThang;
 }
 
 void CCongNhan::Xuat()
 {
 	CNguoi::Xuat();
-
-	cout << "Ma so: " << MaSo << endl;
-	cout << "Muc luong hang thang: " << LuongThang << endl;
+	cout << "+ Ma so: " << MaSo << endl;
+	cout << "+ Muc luong hang thang: " << LuongThang << endl;
 }
