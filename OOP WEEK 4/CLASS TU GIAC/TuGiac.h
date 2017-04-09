@@ -6,14 +6,14 @@ using namespace std;
 class CTuGiac
 {
 protected:
-	CDiem A;
-	CDiem B;
-	CDiem C;
-	CDiem D;
+	Diem A;
+	Diem B;
+	Diem C;
+	Diem D;
 
 public:
 	CTuGiac();
-	CTuGiac(CDiem DiemA, CDiem DiemB, CDiem DiemC, CDiem DiemD);
+	CTuGiac(Diem DiemA, Diem DiemB, Diem DiemC, Diem DiemD);
 	~CTuGiac();
 
 	void Nhap();

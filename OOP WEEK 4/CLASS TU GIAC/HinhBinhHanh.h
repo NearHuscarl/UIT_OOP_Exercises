@@ -1,16 +1,16 @@
 #pragma once
 #include "HinhThang.h"
-class CHinhBinhHanh: public CHinhThang
+class HinhBinhHanh : public HinhThang
 {
-private:
-	bool IsHopLe();
+protected:
+	bool isHopLe();
 
 public:
-	CHinhBinhHanh();
-	~CHinhBinhHanh();
+	HinhBinhHanh();
+	HinhBinhHanh(Diem DiemA, Diem DiemB, Diem DiemC, Diem DiemD);
+	~HinhBinhHanh();
 
 	void Nhap();
 	void HienThiTinhChat();
 	double TinhDienTich();
 };
-

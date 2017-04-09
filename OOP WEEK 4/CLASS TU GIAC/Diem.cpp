@@ -2,63 +2,63 @@
 #include <iostream>
 using namespace std;
 
-CDiem::CDiem(void)
+Diem::Diem(void)
 {
 	x = 0;
 	y = 0;
 }
 
-CDiem::CDiem(float a, float b)
+Diem::Diem(float a, float b)
 {
 	x = a;
 	y = b;
 }
 
-CDiem::~CDiem(void)
+Diem::~Diem(void)
 {
 }
 
-void CDiem::setX(float a)
+void Diem::setX(float a)
 {
 	x = a;
 }
 
-void CDiem::setY(float a)
+void Diem::setY(float a)
 {
 	y = a;
 }
 
-void CDiem::setXY(float a, float b)
+void Diem::setXY(float a, float b)
 {
 	setX(a);
 	setY(b);
 }
 
-float CDiem::getX()
+float Diem::getX()
 {
 	return x;
 }
 
-float CDiem::getY()
+float Diem::getY()
 {
 	return y;
 }
 
-void CDiem::Nhap()
+void Diem::Nhap()
 {
-	cout << "Nhap hoanh do: ";
+	cout << "+ Nhap hoanh do: ";
 	cin >> x;
-	cout << "Nhap tung do: ";
+	cout << "+ Nhap tung do: ";
 	cin >> y;
 }
 
-void CDiem::TinhTien(float dx, float dy)
+void Diem::TinhTien(float dx, float dy)
 {
 	x = x + dx;
 	y = y + dy;
 }
 
-void CDiem::Xuat()
+void Diem::Xuat()
 {
 	cout << "(" << x << "," << y << ")" << endl;
 }

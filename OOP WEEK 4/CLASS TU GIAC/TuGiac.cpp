@@ -1,10 +1,12 @@
 #include "TuGiac.h"
+#include <iostream>
+using namespace std;
 
 CTuGiac::CTuGiac()
 {
 }
 
-CTuGiac::CTuGiac(CDiem DiemA, CDiem DiemB, CDiem DiemC, CDiem DiemD)
+CTuGiac::CTuGiac(Diem DiemA, Diem DiemB, Diem DiemC, Diem DiemD)
 {
 	A = DiemA;
 	B = DiemB;
@@ -19,17 +21,19 @@ CTuGiac::~CTuGiac()
 void CTuGiac::Nhap()
 {
 	cout << "NHAP TOA DO 4 DIEM A, B, C, D" << endl;
-	cout << "NHAP TOA DO DIEM A:" << endl;
+	cout << "--------------------------------" << endl;
+	cout << "* NHAP TOA DO DIEM A:" << endl;
 	A.Nhap();
 
-	cout << "NHAP TOA DO DIEM B:" << endl;
+	cout << "\n* NHAP TOA DO DIEM B:" << endl;
 	B.Nhap();
 
-	cout << "NHAP TOA DO DIEM C:" << endl;
+	cout << "\n* NHAP TOA DO DIEM C:" << endl;
 	C.Nhap();
 
-	cout << "NHAP TOA DO DIEM D:" << endl;
+	cout << "\n* NHAP TOA DO DIEM D:" << endl;
 	D.Nhap();
+	cout << "--------------------------------" << endl;
 }
 
 void CTuGiac::HienThiTinhChat()

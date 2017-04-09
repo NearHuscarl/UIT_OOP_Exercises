@@ -3,22 +3,19 @@
 #include <iostream>
 using namespace std;
 
-class CDoanThang
+class DoanThang
 {
 private:
-	CDiem A;
-	CDiem B;
+	Diem A;
+	Diem B;
 
 public:
-	CDoanThang();
-	CDoanThang(CDiem DiemA, CDiem DiemB);
-	~CDoanThang();
+	DoanThang();
+	DoanThang(Diem DiemA, Diem DiemB);
+	~DoanThang();
 
 	void Nhap();
 	float DoDai();
 	bool IsSongSongOx();
 	bool IsSongSongOy();
-	bool IsTrung(CDoanThang x);
-	int IsVuongGoc(CDoanThang x);
 };
-

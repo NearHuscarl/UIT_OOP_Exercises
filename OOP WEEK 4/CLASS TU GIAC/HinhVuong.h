@@ -1,15 +1,14 @@
 #pragma once
-#include "TuGiac.h"
-class CHinhVuong :
-	public CTuGiac
+#include "HinhChuNhat.h"
+class HinhVuong : public HinhChuNhat
 {
 private:
-
-	bool IsHopLe();
+	bool isHopLe();
 
 public:
-	CHinhVuong();
-	~CHinhVuong();
+	HinhVuong();
+	HinhVuong(Diem DiemA, Diem DiemB, Diem DiemC, Diem DiemD);
+	~HinhVuong();
 
 	void Nhap();
 	void HienThiTinhChat();

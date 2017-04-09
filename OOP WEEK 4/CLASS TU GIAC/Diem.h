@@ -1,13 +1,13 @@
 #pragma once
-class CDiem
+class Diem
 {
 private:
 	float x, y;
 
 public:
-	CDiem(void);
-	CDiem(float, float);
-	~CDiem(void);
+	Diem(void);
+	Diem(float, float);
+	~Diem(void);
 
 	void setX(float);
 	float getX();

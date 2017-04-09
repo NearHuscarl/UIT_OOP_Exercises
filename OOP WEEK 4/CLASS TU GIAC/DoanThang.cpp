@@ -1,24 +1,23 @@
 #include "DoanThang.h"
 #include "Diem.h"
-#include "Vector.h"
 #include <iostream>
 using namespace std;
 
-CDoanThang::CDoanThang()
+DoanThang::DoanThang()
 {
 }
 
-CDoanThang::CDoanThang(CDiem DiemA, CDiem DiemB)
+DoanThang::DoanThang(Diem DiemA, Diem DiemB)
 {
 	A = DiemA;
 	B = DiemB;
 }
 
-CDoanThang::~CDoanThang()
+DoanThang::~DoanThang()
 {
 }
 
-void CDoanThang::Nhap()
+void DoanThang::Nhap()
 {
 	cout << "Nhap toa do diem A" << endl;
 	A.Nhap();
@@ -30,12 +29,12 @@ void CDoanThang::Nhap()
 	B.Xuat();
 }
 
-float CDoanThang::DoDai()
+float DoanThang::DoDai()
 {
 	return sqrt(pow(B.getX() - A.getX(), 2) + pow(B.getY() - A.getY(), 2));
 }
 
-bool CDoanThang::IsSongSongOx()
+bool DoanThang::IsSongSongOx()
 {
 	float d1 = A.getY();
 	float d2 = B.getY();
@@ -45,7 +44,7 @@ bool CDoanThang::IsSongSongOx()
 		return false;
 }
 
-bool CDoanThang::IsSongSongOy()
+bool DoanThang::IsSongSongOy()
 {
 	float d1 = A.getY();
 	float d2 = B.getY();
@@ -55,28 +54,10 @@ bool CDoanThang::IsSongSongOy()
 		return false;
 }
 
-//bool CDoanThang::IsTrung(CDoanThang x)
-//{
-//	if (A.getY() == B.getY())
-//	{
-//		if (A.getY() == x.A.getY() == x.B.getY())
-//			return true;
-//	}
-//	else if (A.getX() == B.getX())
-//	{
-//		if (A.getX() == x.A.getX() == x.B.getX())
-//			return true;
-//	}
-//	else
-//		return false;
-//}
-
-//int CDoanThang::IsVuongGoc(CDoanThang x)
-//{
-//	CVector VectorA(this->A.getX() - this->B.getX(), this->A.getY() - this->B.getY());
-//	CVector VectorB(x.A.getX() - x.B.getX(), x.A.getY() - x.B.getY());
-//	if (VectorA.TichVoHuong(VectorB) == 0)
-//		return true;
-//	else
-//		return false;
-//}
+bool IsTrungNhau(Diem X, Diem Y)
+{
+	if (X.getX() == Y.getX() && X.getY() == Y.getY())
+		return true;
+	else
+		return false;
+}
